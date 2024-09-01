@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Form of school</h1>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+
+                {{ ESFO.as_p }}
+                <!--{{ ESFO.as_ul }}
+                {{ ESFO.as_table }}-->
+            <input type="submit">
+        </form>
+    </center>
+</body>
+</html>
